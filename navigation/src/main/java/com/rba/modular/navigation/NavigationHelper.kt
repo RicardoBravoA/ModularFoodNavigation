@@ -5,7 +5,7 @@ import android.content.Intent
 private const val PACKAGE_NAME = "com.rba.modular"
 
 fun intentTo(intentActivity: IntentActivity): Intent? =
-    Intent(Intent.ACTION_VIEW).setClassName("$PACKAGE_NAME.food", intentActivity.className)
+    Intent(Intent.ACTION_VIEW).setClassName("$PACKAGE_NAME", intentActivity.className)
 
 interface IntentActivity {
     /**
